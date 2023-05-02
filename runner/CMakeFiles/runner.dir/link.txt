@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/runner.dir/runner.cpp.o -o runner   -L/usr/lib/llvm-15/lib  -Wl,-rpath,/usr/lib/llvm-15/lib /usr/lib/llvm-15/lib/libLLVM-15.so.1 
+/usr/bin/c++ CMakeFiles/runner.dir/runner.cpp.o -o runner   -L/usr/lib/llvm-15/lib  -Wl,-rpath,/usr/lib/llvm-15/lib /usr/lib/llvm-15/lib/libLLVM-15.so.1 

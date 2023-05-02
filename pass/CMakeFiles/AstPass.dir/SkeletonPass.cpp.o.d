@@ -411,4 +411,7 @@ CMakeFiles/AstPass.dir/SkeletonPass.cpp.o: \
   /usr/lib/llvm-15/include/llvm/IR/ProfileSummary.h \
   /usr/lib/llvm-15/include/llvm/IR/ValueHandle.h \
   /usr/lib/llvm-15/include/llvm/Transforms/IPO/PassManagerBuilder.h \
-  /usr/lib/llvm-15/include/llvm-c/Transforms/PassManagerBuilder.h
+  /usr/lib/llvm-15/include/llvm-c/Transforms/PassManagerBuilder.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iostream \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/istream \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/istream.tcc

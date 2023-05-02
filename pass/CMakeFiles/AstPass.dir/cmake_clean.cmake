@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/AstPass.dir/SkeletonPass.cpp.o"
-  "CMakeFiles/AstPass.dir/SkeletonPass.cpp.o.d"
+  "CMakeFiles/AstPass.dir/AstPass.cpp.o"
+  "CMakeFiles/AstPass.dir/AstPass.cpp.o.d"
   "libAstPass.pdb"
   "libAstPass.so"
 )
