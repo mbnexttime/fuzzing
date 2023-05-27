@@ -1,0 +1,38 @@
+[
+    {
+        "directory": "/home/maybenexttime/example/test_project",
+        "command": "/usr/bin/c++ -o CMakeFiles/main.dir/main.cpp.ll -c /home/maybenexttime/example/test_project/main.cpp -emit-llvm -fno-use-cxa-atexit",
+        "file": "/home/maybenexttime/example/test_project/main.cpp",
+        "output": "CMakeFiles/main.dir/main.cpp.ll"
+    },
+    {
+        "directory": "/home/maybenexttime/example/test_project",
+        "command": "/usr/bin/opt -load /home/maybenexttime/example/pass/libAstPass.so -ast -enable-new-pm=0 CMakeFiles/main.dir/main.cpp.ll > CMakeFiles/main.dir/main.cpp.ll.modified.ll",
+        "file": "CMakeFiles/main.dir/main.cpp.ll",
+        "output": "CMakeFiles/main.dir/main.cpp.ll.modified.ll"
+    },
+    {
+        "directory": "/home/maybenexttime/example/test_project",
+        "command": "/usr/bin/llvm-link  /home/maybenexttime/example/pass/logop.ll CMakeFiles/main.dir/main.cpp.ll.modified.ll -o CMakeFiles/main.dir/main.cpp.ll.linked.ll",
+        "file": "CMakeFiles/main.dir/main.cpp.ll.modified.ll",
+        "output": "CMakeFiles/main.dir/main.cpp.ll.linked.ll"
+    },
+    {
+        "directory": "/home/maybenexttime/example/test_project",
+        "command": "/usr/bin/c++ -o CMakeFiles/main.dir/mult.cpp.ll -c /home/maybenexttime/example/test_project/mult.cpp -emit-llvm -fno-use-cxa-atexit",
+        "file": "/home/maybenexttime/example/test_project/mult.cpp",
+        "output": "CMakeFiles/main.dir/mult.cpp.ll"
+    },
+    {
+        "directory": "/home/maybenexttime/example/test_project",
+        "command": "/usr/bin/opt -load /home/maybenexttime/example/pass/libAstPass.so -ast -enable-new-pm=0 CMakeFiles/main.dir/mult.cpp.ll > CMakeFiles/main.dir/mult.cpp.ll.modified.ll",
+        "file": "CMakeFiles/main.dir/mult.cpp.ll",
+        "output": "CMakeFiles/main.dir/mult.cpp.ll.modified.ll"
+    },
+    {
+        "directory": "/home/maybenexttime/example/test_project",
+        "command": "/usr/bin/llvm-link  /home/maybenexttime/example/pass/logop.ll CMakeFiles/main.dir/mult.cpp.ll.modified.ll -o CMakeFiles/main.dir/mult.cpp.ll.linked.ll",
+        "file": "CMakeFiles/main.dir/mult.cpp.ll.modified.ll",
+        "output": "CMakeFiles/main.dir/mult.cpp.ll.linked.ll"
+    }
+]

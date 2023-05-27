@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/maybenexttime/example/test_project",
+  "command": "/usr/bin/c++    -o CMakeFiles/main.dir/main.cpp.o -c /home/maybenexttime/example/test_project/main.cpp",
+  "file": "/home/maybenexttime/example/test_project/main.cpp",
+  "output": "CMakeFiles/main.dir/main.cpp.o"
+},
+{
+  "directory": "/home/maybenexttime/example/test_project",
+  "command": "/usr/bin/c++    -o CMakeFiles/main.dir/mult.cpp.o -c /home/maybenexttime/example/test_project/mult.cpp",
+  "file": "/home/maybenexttime/example/test_project/mult.cpp",
+  "output": "CMakeFiles/main.dir/mult.cpp.o"
+}
+]

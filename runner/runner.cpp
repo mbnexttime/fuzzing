@@ -70,7 +70,12 @@ int main(int argc, char* argv[]) {
   llvm::InitializeNativeTarget();
   llvm::InitializeNativeTargetAsmPrinter();
   llvm::LLVMContext context;
-  std::vector<std::string> ir_files = { "./../pass/result.bc" };
+  ifstream llvm_ir_files(argv[4], ios_base::in);
+  string temp_file_path;
+  std::vector<std::string> ir_files;
+  while (llvm_ir_files >> temp_file_path) {
+    ir_files.push_back(temp_file_path);
+  }
 
   llvm::SMDiagnostic error;
   std::unique_ptr<llvm::Module> llvm_ir_module =
@@ -107,6 +112,8 @@ int main(int argc, char* argv[]) {
   }
 
   int portCPP = std::atoi(argv[2]);
+
+  std::cerr << "start listening";
 
   int server_socket = socket(AF_INET, SOCK_STREAM, 0);
   if (server_socket < 0) {

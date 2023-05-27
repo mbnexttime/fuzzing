@@ -1,0 +1,3 @@
+/home/maybenexttime/example/test_project/CMakeFiles/main.dir
+/home/maybenexttime/example/test_project/CMakeFiles/edit_cache.dir
+/home/maybenexttime/example/test_project/CMakeFiles/rebuild_cache.dir

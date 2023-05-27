@@ -1,10 +1,12 @@
 #include <iostream>
 
+int mult(int a, int b);
+
 int sum(int a, int b) {
-    return a + b;
+    return mult(a + 2, b + 2);
 }
 
 int main() {
-    std::cout << sum(3, 4);
+    sum(3, 4);
     return 0;
 }
