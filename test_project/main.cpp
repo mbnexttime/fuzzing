@@ -3,7 +3,8 @@
 int mult(int a, int b);
 
 int sum(int a, int b) {
-    return mult(a + 2, b + 2);
+    mult(a, b);
+    return a + b;
 }
 
 int main() {
