@@ -167,7 +167,6 @@ int main(int argc, char* argv[]) {
       auto result = engine->runFunction(function, llvmArguments);
       fflush(stdout);
       auto output = decode_argument(argv[3], result);
-      std::cerr << std::endl << traces.str() << std::endl;
       output = output + ";" + traces.str() + '\n';
       if (send(client_socket, output.c_str(), output.length(), 0) == -1) {
         std::cerr << "Failed to send data to jvm";
