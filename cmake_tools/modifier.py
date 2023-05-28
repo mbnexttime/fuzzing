@@ -24,8 +24,6 @@ def processCompileCommands(
 
                     outputCommand = command["output"].replace(".o", ".ll")
 
-                    print(outputCommand, file=llvmOutputs)
-
                     modifiedOutput = f'{outputCommand}.modified.ll'
 
                     linkedOutput = f'{outputCommand}.linked.ll'
@@ -54,6 +52,8 @@ def processCompileCommands(
                             "output": linkedOutput
                         }
                     )
+
+                    print(linkedOutput, file=llvmOutputs)
                 json.dump(newCommands, modifiedCommandsJson, indent=4)
 
 

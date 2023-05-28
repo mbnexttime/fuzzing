@@ -113,8 +113,6 @@ int main(int argc, char* argv[]) {
 
   int portCPP = std::atoi(argv[2]);
 
-  std::cerr << "start listening";
-
   int server_socket = socket(AF_INET, SOCK_STREAM, 0);
   if (server_socket < 0) {
     cerr << "Error creating receiver socket";
@@ -147,7 +145,6 @@ int main(int argc, char* argv[]) {
       close(server_socket);
       return -1;
     }
-    auto f = freopen("log.txt", "w", stdout);
     while (true) {
       int num_bytes_received = read(client_socket, buffer, sizeof(buffer));
       if (num_bytes_received == -1) {
@@ -170,7 +167,7 @@ int main(int argc, char* argv[]) {
       auto result = engine->runFunction(function, llvmArguments);
       fflush(stdout);
       auto output = decode_argument(argv[3], result);
-
+      std::cerr << std::endl << traces.str() << std::endl;
       output = output + ";" + traces.str() + '\n';
       if (send(client_socket, output.c_str(), output.length(), 0) == -1) {
         std::cerr << "Failed to send data to jvm";
